@@ -88,3 +88,4 @@ function multiplyBy(n) {
 
 multiplyBy(3)(5);
 multiplyBy(2)(10);
+// tugadi
