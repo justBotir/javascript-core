@@ -32,3 +32,8 @@ console.log(divide(2, 3));
 console.log(isEven(10));
 console.log(isValidEmail("justBotir.email.com"));
 console.log(isValidEmail("justBotir@email.com"));
+
+let app = (x, y) => x + y;
+
+const result = app(2, 4);
+console.log(result);
