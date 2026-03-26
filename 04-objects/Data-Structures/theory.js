@@ -110,7 +110,13 @@ console.log(massiv[Symbol.iterator]);
 
 // ! Map va Set - malumotlarni saqlab turish uchun ishlatiladi
 
-// ! Map - Object dan farqli ravishgda keyga istalgan qiymat bersa bo'ladi
+// ! Map - bu kalit (key) va qiymat (value) saqlovchi obyekt
+// Object dan farqli ravishda keyga istalgan qiymat bersa bo'ladi
+
+// 🔹 Xususiyatlari:
+// har qanday tip key bo‘la oladi
+// tartib saqlanadi
+// .set(), .get(), .has()
 
 const map = new Map();
 
@@ -175,3 +181,28 @@ const map1 = new Map([
 console.log(map1.has("Olma")); // map keyini tekshiradi bor bolsa true aks holda false
 map.clear(); // mapni tozalab tashlaydi
 map.delete("Olma"); // aynan qaysidir key va value ni o'chirish uchun
+
+// ! Set - bu faqat unique (takrorlanmaydigan) qiymatlar to‘plami
+
+// 🔹 Xususiyatlari:
+// takroriy qiymatlarni qabul qilmaydi
+// .add(), .has(), .delete()
+
+const set1 = new Set();
+
+set1.add(1);
+set1.add(1);
+set1.add(true);
+set1.add("string");
+
+console.log(set1);
+console.log(set1.size);
+console.log(set1.has(1)); // value bor bosa true aks holda false
+set1.delete(1); // berilgan valueni o'chirish
+console.log(set1);
+set1.clear(); // butunlay o'chirish
+console.log(set1);
+
+for (let item of set1) {
+  console.log(item);
+} // Iterable
