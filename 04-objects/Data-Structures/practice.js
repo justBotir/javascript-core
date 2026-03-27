@@ -119,8 +119,9 @@ Setdan foydalanib noyob sonlarni saqlang. Quyidagi amallarni bajaring:
 3.delete yordamida bitta elementni o‘chiring.
 4.size bilan elementlar sonini tekshiring.
 5.clear yordamida barcha elementlarni o‘chiring.
+*/
 
-
+/*
 Masala 2: Noyob ismlar ro‘yxati
 Shart:
 Takrorlanmagan ismlar ro‘yxatini Set yordamida tuzing va quyidagi amallarni bajaring:
