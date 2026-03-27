@@ -69,7 +69,7 @@
 // const result9 = arr8.reduce((acc, item) => acc + item, 0);
 // console.log(result9);
 
-// ! Map bilan ishlash
+// ! Map bilan ishlash misollari
 /* 
 * 1. Talabalarning baholarini saqlovchi Map yarating. Keyin quyidagi amallarni bajaring:
 1.set yordamida 3 ta talabaning baholarini qo‘shing.
@@ -109,11 +109,10 @@ const allProducts = products.forEach((price, product, products) => {
 });
 console.log(products.size);
 
+// ! Set bilan ishlash misollari
+
 /* 
-2. Set bilan ishlash misollari
-Masala 1: Noyob raqamlarni saqlash
-Shart:
-Setdan foydalanib noyob sonlarni saqlang. Quyidagi amallarni bajaring:
+* 1. Setdan foydalanib noyob sonlarni saqlang. Quyidagi amallarni bajaring:
 1.add yordamida 5 ta raqam qo‘shing.
 2.has bilan ma’lum bir son borligini tekshiring.
 3.delete yordamida bitta elementni o‘chiring.
@@ -122,9 +121,7 @@ Setdan foydalanib noyob sonlarni saqlang. Quyidagi amallarni bajaring:
 */
 
 /*
-Masala 2: Noyob ismlar ro‘yxati
-Shart:
-Takrorlanmagan ismlar ro‘yxatini Set yordamida tuzing va quyidagi amallarni bajaring:
+* 2. Takrorlanmagan ismlar ro‘yxatini Set yordamida tuzing va quyidagi amallarni bajaring:
 1.add yordamida 4 ta ism qo‘shing.
 2.has yordamida ma’lum ism borligini tekshiring.
 3.forEach yordamida barcha ismlarni ekranga chiqaring.
