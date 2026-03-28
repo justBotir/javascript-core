@@ -1,23 +1,23 @@
 // 1. Massiv ichidan birinchi uchragan juft sonni aniqlang. Agar topilmasa, undefined qaytsin.
 
-const arr = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
+const arr = [1, 2, 3, 4];
 
-const result = arr.find((item) => item.id % 2 === 0);
+const result = arr.find((item) => item % 2 === 0);
 
 console.log(result);
 
 // 2. Massiv ichidan birinchi uchragan musbat sonning indeksini qaytaring. Agar bunday son bo'lmasa, -1 chiqsin.
 
-const arr1 = [{ id: -1 }, { id: -1 }, { id: -2 }, { id: -3 }, { id: -2 }];
+const arr1 = [1, 2, 3, 4, 5];
 
-const result1 = arr1.findIndex((item) => item.id >= 0);
+const result1 = arr1.findIndex((item) => item >= 0);
 console.log(result1);
 
 // 3. Massiv ichidagi oxirgi uchragan toq sonning indeksini toping. Agar bunday son bo'lmasa, -1 chiqsin.
 
-const arr2 = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
+const arr2 = [1, 2, 3, 4, 5];
 
-const result2 = arr2.findLastIndex((item) => item.id % 2 !== 0);
+const result2 = arr2.findLastIndex((item) => item % 2 !== 0);
 console.log(result2);
 
 // 4. Massiv ichidan faqat 0 dan katta elementlarni ajratib oling va yangi massiv qaytaring.
