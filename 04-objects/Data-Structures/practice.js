@@ -104,7 +104,7 @@ const products = new Map();
 products.set("Apple", 15000).set("Grapes", 18000).set("Banana", 27000);
 console.log(products.get("Banana"));
 console.log(products.has("Orange"));
-const allProducts = products.forEach((price, product, products) => {
+products.forEach((price, product) => {
   console.log(product);
 });
 console.log(products.size);
@@ -143,7 +143,7 @@ const names = new Set();
 
 names.add("Ali").add("Vali").add("Javohir").add("Behuz");
 console.log(names.has("Ali"));
-const allNames = names.forEach((values, keys, names) => {
-  console.log(keys);
+names.forEach((values) => {
+  console.log(values);
 });
 console.log(names.size);
