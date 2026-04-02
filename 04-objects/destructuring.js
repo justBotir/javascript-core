@@ -68,5 +68,49 @@
 
 // console.log(forwards);
 
-const [firsName, lastName = "Ergashev"] = ["Ali"];
-console.log(firsName);
+// const [firsName, lastName = "Ergashev"] = ["Ali"];
+// console.log(firsName);
+
+// * ...rest operatorini funksiya ichida ishlatish - funcsiyada birnechta qiymatlar berilsa uni massivga yig'ib beradi
+
+function func(...args) {
+  console.log(args);
+}
+
+func(1, 2, 3, 4, 5);
+
+//
+function func1(a, b, ...args) {
+  console.log(args);
+}
+
+func1(1, 2, 3, 4, 5);
+
+// * function ichida arguments kalit sozi argumentlarni olib beradi, xatto parametrlar berilmagan bo'lsa ham
+
+function func2() {
+  console.log(arguments);
+}
+func2("Hala", "Madrid");
+
+// Math.max array qabul qilmaydi lekin rest operatori orqali qulay ishlasa boladi
+
+const arr = [1, 2, 3, 4, 5];
+console.log(Math.max(...arr));
+
+// ...rest va spread operators
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [6, 7, 8, 9, 10];
+console.log(Math.max(...arr1, ...arr2));
+
+// Array.from() metodi massive ga o'girish uchun ishlatiladi
+const str = "Hala Madrid";
+console.log(Array.from(str));
+
+// * Block code - JS’da { } ichidagi kod — block (blok) deyiladi
+{
+  let message = "Hallo";
+  console.log(message);
+}
+
+console.log(message);
